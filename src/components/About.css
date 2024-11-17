@@ -1,4 +1,3 @@
-/* Styles applied to .container-about elements */
 .container-about {
     width: var(--main-Width);
     margin: 0 auto;
@@ -14,32 +13,26 @@
     transition: .3s;
 }
 
-/* Styles applied to .container-about:hover elements */
 .container-about:hover {
     transform: scale(1.009, 1.009)
 }
 
-/* Styles applied to .container-about h2 elements */
 .container-about h2 {
     font-size: 3rem;
     margin: 0;
 }
 
-/* Styles applied to .container-about .about-box elements */
 .container-about .about-box {
     display: flex;
     align-items: center;
     justify-content: space-around;
 }
 
-
-/* Styles applied to .container-about .about-box i elements */
 .container-about .about-box i {
     font-size: 20rem;
     color: var(--main-Color);
 }
 
-/* Styles applied to .container-about .about-box p elements */
 .container-about .about-box .desc-box p {
     width: 80%;
     text-align: justify;
@@ -72,9 +65,7 @@
     transform: scale(1.05, 1.05);
 }
 
-/* Styles applied to @media only screen and (max-width: 1000px) elements */
 @media only screen and (max-width: 1000px) {
-/* Styles applied to .container-about elements */
     .container-about {
         width: var(--phone-Width);
         margin: 0 auto;
@@ -90,7 +81,6 @@
         transition: .3s;
     }
 
-/* Styles applied to .container-about .about-box elements */
     .container-about .about-box {
         display: flex;
         align-items: center;
@@ -98,13 +88,11 @@
         flex-direction: column;
     }
 
-/* Styles applied to .container-about .about-box i elements */
     .container-about .about-box i {
         font-size: 8rem;
         color: var(--main-Color);
     }
 
-/* Styles applied to .container-about .about-box p elements */
     .container-about .about-box p {
         width: 100%;
         text-align: justify;

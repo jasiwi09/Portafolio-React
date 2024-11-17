@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Rethink+Sans&display=swap');
 
-/* General CSS*/
 * {
     --main-Color: rgba(53, 152, 244, 1);
     --secondary-Color: #333333;
@@ -31,8 +30,9 @@ a {
 }
 
 
-/* Main CSS */
-.main-container {
+
+
+.register-container {
     max-width: 600px;
     margin: 0 auto;
     background-color: var(--secondary-Color);
@@ -45,131 +45,56 @@ a {
     flex-direction: column;
 }
 
-@media only screen and (max-width: 1000px) {
-    .main-container {
-        max-width: 350px;
-    }
-}
-
-
-/* Name CSS */
-.name-container h1 {
-    font-size: 3rem;
-    font-weight: bolder;
-    padding: 0;
-}
-
-.name-container h2 {
-    font-size: 2.75rem;
-    color: #e1e1e1;
-    padding: 0;
-}
-
-/* Offers CSS */
-.offer-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    border-top: solid 2px var(--main-Color);
-    width: 100%;
-    background-color:#444444;
-}
-
-.offer-container img {
-    width: 20rem;
-    padding: 2rem 0;
-}
-
-.offer-info {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    text-align: left;
-    padding: 2rem; 
-}
-
-.offer-info h2 {
-    font-size: 3rem;
-    padding: 0;
-    margin: 1rem 0;
-}
-
-
-.offer-info p {
+.register-container span {
     font-size: 2rem;
+    font-weight: 500;
     padding: 0;
-    margin: 1rem 0;
+    margin-top: 2rem;
+    text-align: center;
 }
 
-@media only screen and (max-width: 1000px) {
-    .offer-container img {
-        width: 15rem;
-        padding: 2rem 0;
-    }
-    .offer-info h2 {
-        font-size: 2.5rem;
-        padding: 0;
-        margin: 1rem 0;
-    }
-}
-
-
-/* Get Offer CSS */
-.get-container {
-    border-top: solid 2px var(--main-Color);
-    padding: 3rem;
-    width: 90%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.get-container span {
-    font-size: 2rem;
-}
-
-.get-container button {
-    width: 65%;
-}
-
-@media only screen and (max-width: 1000px) {
-    .get-container {
-        border-top: solid 2px var(--main-Color);
-        padding: 3rem;
-        width: auto;
-    }
-}
-
-
-@keyframes zoominout {
-    0% {
-        transform: scale(1.05, 1.05);
-    }
-
-    50% {
-        transform: scale(1, 1);
-    }
-
-    100%  {
-        transform: scale(1.05, 1.05);
-    }
-    
-}
-.get-container button {
+.register-container input {
+    margin-top: 1rem;
     border: none;
     padding: 1rem 3rem;
-    font-size: 2rem;
+    font-size: 1.5rem;
     border-radius: 10px;
-    background-color: var(--main-Color);
+    background-color: var(--bg-Color);
     color: white;
-    cursor: pointer;
-    animation: zoominout 1s infinite ease-in-out;
 }
 
-.get-container p {
-    font-size: 2rem;
-    background-color: red;
-    width: 25%;
-    margin: 0 auto;
+.register-container input:focus {
+    outline: none;
+}
+
+.register-container button {
+    background-color: var(--main-Color);
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    padding: 1rem 2rem;
     border-radius: 10px;
+    cursor: pointer;
+    transition: .3s;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.register-container button:hover {
+    transform: scale(1.05, 1.05);
+}
+
+.register-container .message {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+
+    
+}
+
+@media only screen and (max-width: 1000px) {
+    @media only screen and (max-width: 1000px) {
+        .register-container {
+            max-width: 350px;
+        }
+    }
 }

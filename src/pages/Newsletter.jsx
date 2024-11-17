@@ -1,44 +1,42 @@
 import {useState, useEffect} from "react";
 import './Newsletter.css';
+import ExampleNewsletter from "./ExampleNewsletter";
 
 export default function Newsletter() {
 
-    const [time, setTime] = useState(60);
+    const [message, setMessage] = useState("");
+    const [sended, setSended] = useState(false);
 
-    useEffect(() => {
-        const interval =  setInterval(() => {
-            setTime(prevTime => prevTime > 0 ? prevTime - 1 : 0);
-        }, 1000);
+    function handleSendButton(event) {
+        event.preventDefault();
 
-        return () => clearInterval(interval);
-    })
+        const emailInput = document.querySelector('input[type="email"]');
+        if (!emailInput.value) {
+            setMessage(<span style={{color: 'red'}}>Falta por introducir el email.</span>);
+            return;
+        } else if (!emailInput.value.includes('@')) {
+            setMessage(<span style={{color: 'red'}}>El email introducido no es válido.</span>);
+            return;
+        }
+
+        setMessage(<span style={{color: 'lime', textAlign: 'center'}}>¡Te has suscrito correctamente al newsletter! 😀</span>);
+
+        if (message !== "") {
+            setSended(true);
+        }
+    }
 
 
     return (
-        <div className="main-container">
-            <div className="name-container">
-                <h1>Antonio Martinez</h1>
-                <h2>Newsletter</h2>
+        <>
+            <div className="register-container">
+                <span>¡Regístrate en mi newsletter y no te pierdas ninguna oferta!</span>
+                <input type="email" placeholder="Introduce tu email" />
+                <button onClick={handleSendButton}>¡REGÍSTRATE!</button>
+                {message && <span className="message">{message}</span>}
             </div>
 
-            <div className="offer-container">
-                <img src="/img/50offer.png" alt="" />
-                <div className="offer-info">
-                    <h2>¡Cursos en descuento!</h2>
-                    <p>¡Estás de suerte! Aprovecha el 50% de descuento en mis cursos</p>
-                </div>
-            </div>
-            <div className="offer-container" style={{'flexDirection': 'row-reverse'}}>
-                <img src="/img/25offer.png" alt="" />
-                <div className="offer-info">
-                    <h2>¡Clases en oferta!</h2>
-                    <p>¡Enhorabuena! Ahora mismo puedes optar hasta un 25% de descuento en los packs de clases que estoy ofertando</p>
-                </div>
-            </div>
-
-            <div className="get-container">
-                {time > 0 ? <><span>¡{time} segundos restantes!</span> <button>¡APROVECHAR OFERTAS! <br /> <span id="countdown"></span> </button></> : <button style={{color: "white", backgroundColor:"red"}}>¡OFERTAS FINALIZADAS!</button>}
-            </div>
-        </div>
+            <ExampleNewsletter />            
+        </>
     );
 }

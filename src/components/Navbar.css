@@ -4,7 +4,6 @@ header {
     z-index: 9999;
 }
 
-/* Styles applied to .nav-box elements */
 .nav-box {
     padding: 0;
     background-color: var(--main-Color);
@@ -52,7 +51,6 @@ header {
 }
 
 
-/* Styles applied to @media only screen and (max-width: 1000px) elements */
 @media only screen and (max-width: 1000px) {
     .nav-box {
         padding: 0;

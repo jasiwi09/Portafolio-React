@@ -1,4 +1,3 @@
-/* Styles applied to .container-skills elements */
 .container-skills {
     width: var(--main-Width);
     margin: 0 auto;
@@ -14,13 +13,11 @@
     transition: .3s;
 }
 
-/* Styles applied to .container-skills:hover elements */
 .container-skills:hover {
     transform: scale(1.009, 1.009);
 }
 
 
-/* Styles applied to .skills-box elements */
 .skills-box {
     display: flex;
     align-items: center;
@@ -28,7 +25,6 @@
     width: 100%;
 }
 
-/* Styles applied to .container-skills h2 elements */
 .container-skills h2 {
     font-size: 4rem;
     padding: 0;
@@ -37,13 +33,11 @@
 }
 
 
-/* Styles applied to .container-skills .skills-box i elements */
 .container-skills .skills-box i {
     font-size: 20rem;
     color: var(--main-Color);
 }
 
-/* Styles applied to .container-skills .skills-box .skills-icons elements */
 .container-skills .skills-box .skills-icons {
     background-color: var(--bg-Color);
     padding: 2rem 4rem;
@@ -57,7 +51,6 @@
     align-items: center;
 }
 
-/* Styles applied to .container-skills .skills-box .skills-icons i elements */
 .container-skills .skills-box .skills-icons i {
     color: white;
     font-size: 5rem;
@@ -65,7 +58,6 @@
     cursor: pointer;
 }
 
-/* Styles applied to .container-skills .skills-box .skills-icons svg elements */
 .container-skills .skills-box .skills-icons svg {
     color: white;
     width: 4rem;
@@ -74,15 +66,12 @@
 }
 
 .container-skills .skills-box .skills-icons i:hover,
-/* Styles applied to .container-skills .skills-box .skills-icons svg:hover elements */
 .container-skills .skills-box .skills-icons svg:hover {
     transform: scale(1.05, 1.05);
 }
 
 
-/* Styles applied to @media only screen and (max-width: 1000px) elements */
 @media only screen and (max-width: 1000px) {
-/* Styles applied to .container-skills elements */
     .container-skills {
         width: var(--phone-Width);
         margin: 0 auto;
@@ -97,7 +86,6 @@
         flex-direction: column;
     }
 
-/* Styles applied to .skills-box elements */
     .skills-box {
         display: flex;
         align-items: center;
@@ -106,14 +94,12 @@
         flex-direction: column;
     }
 
-/* Styles applied to .container-skills .skills-box i elements */
     .container-skills .skills-box i {
         font-size: 9rem;
         color: var(--main-Color);
     }
 
 
-/* Styles applied to .container-skills .skills-box .skills-icons elements */
     .container-skills .skills-box .skills-icons {
         background-color: var(--bg-Color);
         display: grid;
@@ -123,14 +109,12 @@
         margin-top: 2rem;
     }
 
-/* Styles applied to .container-skills .skills-box .skills-icons i elements */
     .container-skills .skills-box .skills-icons i {
         color: white;
         font-size: 5rem;
         margin: 1rem 0;
     }
 
-/* Styles applied to .container-skills .skills-box .skills-icons svg elements */
     .container-skills .skills-box .skills-icons svg {
         color: white;
         font-size: 5rem;

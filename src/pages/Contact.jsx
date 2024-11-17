@@ -19,7 +19,7 @@ export default function Contact() {
             return;
         }
 
-        setMessage(<span style={{color: 'lime'}}>¡Email recibido! Pronto contactaré contigo 😀</span>);
+        setMessage(<span style={{color: 'lime', textAlign: 'center'}}>¡Email recibido! Pronto contactaré contigo 😀</span>);
     }
 
     return (
