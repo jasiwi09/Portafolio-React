@@ -1,0 +1,120 @@
+/* Styles applied to .container-projects elements */
+.container-projects {
+    width: var(--main-Width);
+    margin: 0 auto;
+    height: 80rem;
+    background-color: var(--secondary-Color);
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 3rem;
+    margin-top: 3rem;
+    flex-direction: column;
+    transition: .3s;
+}
+
+/* Styles applied to .container-projects:hover elements */
+.container-projects:hover {
+    transform: scale(1.009, 1.009);
+}
+
+/* Styles applied to .container-projects h2 elements */
+.container-projects h2 {
+    font-size: 4rem;
+    padding: 0;
+    margin: 2rem 0;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+
+/* Styles applied to .projects-box elements */
+.projects-box {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+/* Styles applied to .project-box elements */
+.project-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+/* Styles applied to .projects-box img elements */
+.projects-box img {
+    width: 40rem;
+    height: 25rem;
+    object-fit: cover;
+    padding: 0;
+    margin: 0 2rem;
+    border-radius: 10px;
+    transition: .5s;
+    cursor: pointer;
+}
+
+/* Styles applied to .projects-box img:hover elements */
+.projects-box img:hover {
+    width: 42.5rem;
+    height: 27.5rem;
+}
+
+/* Styles applied to .projects-box .project-info elements */
+.projects-box .project-info {
+    width: var(--main-Width);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Styles applied to .projects-box .project-info h3 elements */
+.projects-box .project-info h3 {
+    font-size: 2rem;
+    text-transform: capitalize;
+}
+
+
+/* Styles applied to @media only screen and (max-width: 1000px) elements */
+@media only screen and (max-width: 1000px) {
+/* Styles applied to .container-projects elements */
+    .container-projects {
+        width: var(--phone-Width);
+        margin: 0 auto;
+        height: 170rem;
+        background-color: var(--secondary-Color);
+        border-radius: 20px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 3rem;
+        margin-top: 3rem;
+        flex-direction: column;
+        transition: .3s;
+    }
+
+/* Styles applied to .projects-box elements */
+    .projects-box {
+        display: flex;
+        flex-direction: column;
+    }
+
+/* Styles applied to .projects-box img elements */
+    .projects-box img {
+        width: 25rem;
+        height: 20rem;
+        object-fit: cover;
+        padding: 0;
+        margin: 0 2rem;
+        border-radius: 10px;
+        transition: .3s;
+    }
+
+/* Styles applied to .projects-box img:hover elements */
+    .projects-box img:hover {
+        transform: scale(1.2, 1.2);
+    }
+}

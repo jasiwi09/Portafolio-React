@@ -1,0 +1,9 @@
+/* Styles applied to .container-footer elements */
+.container-footer {
+    width: 50%;
+    margin: 2rem auto;
+    bottom: 0;
+    text-align: center;
+    font-size: 1.25rem;
+    color: rgb(93, 93, 93);
+}

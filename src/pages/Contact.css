@@ -1,0 +1,123 @@
+.container-contact form {
+    width: var(--main-Width);
+    margin: 0 auto;
+    height: 30rem;
+    background-color: var(--secondary-Color);
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 3rem;
+    margin-top: 3rem;
+    flex-direction: column;
+    transition: .3s;
+}
+
+.container-contact form:hover {
+    transform: scale(1.009, 1.009);
+}
+
+.container-contact h2 {
+    font-size: 3rem;
+}
+
+.container-contact h3 {
+    font-size: 2.5rem;
+}
+
+.container-contact input {
+    border: none;
+    padding: 1rem 3rem;
+    font-size: 2rem;
+    border-radius: 10px;
+    background-color: var(--bg-Color);
+    color: white;
+}
+
+.container-contact input:focus {
+    outline: none;
+}
+
+.container-contact button {
+    background-color: var(--main-Color);
+    border: none;
+    color: white;
+    font-size: 2rem;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .3s;
+    margin-bottom: 2rem;
+}
+
+.container-contact button:hover {
+    transform: scale(1.05, 1.05);
+}
+
+.container-contact .checkbox-box {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+    gap: 5px;
+}
+
+.container-contact .checkbox-box label {
+    font-size: 1.5rem;
+}
+
+.container-contact span {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+@media only screen and (max-width: 1000px) {
+    .container-contact form {
+        width: 75%;
+        margin: 0 auto;
+        height: 40rem;
+        background-color: var(--secondary-Color);
+        border-radius: 20px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 2rem;
+        margin-top: 3rem;
+        flex-direction: column;
+        transition: .3s;
+    }
+
+    .container-contact h2 {
+        font-size: 3rem;
+        text-align: center;
+    }
+
+    .container-contact h3 {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+
+    .container-contact .checkbox-box {
+        margin-top: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 2rem;
+        text-align: center;
+        width: 100%;
+    }
+
+    .container-contact input {
+        border: none;
+        padding: 1rem 3rem;
+        font-size: 1.5rem;
+        border-radius: 10px;
+        background-color: var(--bg-Color);
+        color: white;
+    }
+
+    .container-contact .checkbox-box label {
+        font-size: 1rem;
+    }
+}

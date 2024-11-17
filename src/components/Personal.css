@@ -1,0 +1,161 @@
+/* Styles applied to .container-main elements */
+.container-main {
+    width: var(--main-Width);
+    margin: 0 auto;
+    height: 70rem;
+    background-color: var(--secondary-Color);
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 3rem;
+    margin-top: 3rem;
+    transition: .3s;
+}
+
+/* Styles applied to .container-main:hover elements */
+.container-main:hover {
+    transform: scale(1.009, 1.009);
+
+}
+
+
+/* Styles applied to .container-main .left-side h1 elements */
+.container-main .left-side h1 {
+    color: white;
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 5.5rem;
+    padding: 0;
+    margin: 0;
+}
+
+/* Styles applied to .container-main .left-side h2 elements */
+.container-main .left-side h2 {
+    font-weight: bold;
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    padding: 0;
+    margin: 0;
+    color: var(--main-Color)
+}
+
+
+/* Styles applied to .container-main .left-side button elements */
+.container-main .left-side button {
+    border: none;
+    background-color: var(--bg-Color);
+    color: white;
+    font-size: 2.25rem;
+    padding: 1.5rem 3rem;
+    border-radius: 20px;
+    margin-top: 3rem;
+    text-transform: capitalize;
+    font-weight: bolder;
+    transition: .3s;
+    cursor: pointer;
+}
+
+/* Styles applied to .container-main .left-side a elements */
+.container-main .left-side a {
+    display: flex;
+    justify-content: left;
+}
+
+/* Styles applied to .container-main .left-side button:hover elements */
+.container-main .left-side button:hover {
+    background-color: var(--main-Color);
+    transform: scale(1.025, 1.025);
+
+}
+
+.container-main .right-side {
+    position: relative;
+    cursor: pointer;
+}
+
+.container-main .right-side .secondImg{
+    position: absolute;
+    top: 0;
+    opacity: 0;
+    left: 0;
+    transition: .3s;
+}
+
+
+.container-main .right-side:hover .secondImg {
+    opacity:  1;
+}
+
+.container-main .right-side .hello {
+    position: absolute;
+    bottom: 0;
+    left: 30%;
+    font-size: 3rem;
+    transition:.3s;
+    background-color: var(--main-Color);
+    padding: 1rem 4rem;
+    border-radius: 10px;
+    opacity: 0;
+    transition: .4s;
+    font-weight: bolder;
+}
+
+
+.container-main .right-side:hover .hello {
+    opacity: 1;
+    bottom: 2rem;
+}
+
+
+/* Styles applied to .container-main .right-side img elements */
+.container-main .right-side img {
+    width: 40rem;
+    border-radius: 20px;
+}
+
+/* Styles applied to @media only screen and (max-width: 1000px) elements */
+@media only screen and (max-width: 1000px) {
+/* Styles applied to .container-main elements */
+    .container-main {
+        width: 80%;
+        height: 50rem;
+        align-items: center;
+        padding: 1rem;
+        flex-direction: column-reverse;
+        justify-content: center;
+        text-align: center;
+    }
+
+/* Styles applied to .container-main .left-side h1 elements */
+    .container-main .left-side h1 {
+        color: white;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 3rem;
+        margin-top: 1rem;
+    }
+
+/* Styles applied to .container-main .left-side h2 elements */
+    .container-main .left-side h2 {
+        font-size: 2rem;
+    }
+
+/* Styles applied to .container-main .right-side img elements */
+    .container-main .right-side img {
+        width: 20rem;
+    }
+
+/* Styles applied to .container-main .left-side button elements */
+    .container-main .left-side button {
+        font-size: 1.5rem;
+        padding: 1.5rem 3rem;
+    }
+
+/* Styles applied to .container-main .left-side a elements */
+    .container-main .left-side a {
+        display: flex;
+        justify-content: center;
+    }
+}
+

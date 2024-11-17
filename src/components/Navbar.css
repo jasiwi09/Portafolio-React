@@ -1,0 +1,82 @@
+header {
+    position: sticky;
+    top: 1rem;
+    z-index: 9999;
+}
+
+/* Styles applied to .nav-box elements */
+.nav-box {
+    padding: 0;
+    background-color: var(--main-Color);
+    width: 70rem;
+    margin: 2rem auto;
+    margin-bottom: 0;
+    padding: 1.5rem;
+    font-size: 2rem;
+    font-weight: 500;
+    border-radius: 20px;
+    max-width: 1200px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(2.5px);
+
+}
+
+.nav-box ul {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+
+}
+
+.nav-box ul li {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+
+.nav-box ul li:hover {
+    transform: scale(1.05, 1.05);
+}
+
+.nav-box ul li i {
+    font-size: 1.5rem;
+
+}
+
+
+/* Styles applied to @media only screen and (max-width: 1000px) elements */
+@media only screen and (max-width: 1000px) {
+    .nav-box {
+        padding: 0;
+        background-color: var(--main-Color);
+        width: 80%;
+        margin: 1rem auto;
+        padding: 1.5rem;
+        font-size: 1rem;
+    }
+
+    .nav-box ul {
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+        list-style: none;
+        margin: 0;
+        width: 100%;
+        gap: 0;
+        padding: 0;
+    }
+
+    .nav-box ul li i {
+        font-size: 1rem;
+
+    }
+}
+

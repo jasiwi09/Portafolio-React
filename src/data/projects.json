@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "path": "/img/proyecto1.webp",
+        "title": "api fetch de pokemon"
+    },
+    {
+        "id": 2,
+        "path": "/img/proyecto2.png",
+        "title": "clon de twitter"
+    },
+    {
+        "id": 3,
+        "path": "/img/proyecto3.jpg",
+        "title": "clon de whatsapp"
+    },
+    {
+        "id": 4,
+        "path": "/img/proyecto4.png",
+        "title": "clon de youtube"
+    },
+    {
+        "id": 5,
+        "path": "/img/proyecto5.png",
+        "title": "clon de netflix"
+    },
+    {
+        "id": 6,
+        "path": "/img/proyecto6.jpg",
+        "title": "clon de amazon"
+    }
+]

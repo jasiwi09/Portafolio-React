@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css?family=Rethink+Sans&display=swap');
+
+
+/* Styles applied to * elements */
+* {
+    --main-Color: rgba(53, 152, 244, 1);
+    --secondary-Color: #333333;
+    --bg-Color: #1e1e1e;
+    --main-Width: 90%;
+    --phone-Width: 70%;
+}
+
+/* Styles applied to html elements */
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+
+}
+
+/* Styles applied to body elements */
+body {
+    background-color: var(--bg-Color);
+    font-family: 'Rethink Sans';
+    color: white;
+    margin: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+/* Styles applied to a elements */
+a {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
