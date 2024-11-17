@@ -1,6 +1,6 @@
 import './Projects.css';
-import Project from './Project.js';
-import projects from '../data/projects.json';
+import Project from './Project.jsx';
+import projects from '../assets/data/projects.json';
 
 
 export default function Projects() {

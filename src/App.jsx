@@ -1,12 +1,12 @@
 import './App.css';
-import Navbar from './components/Navbar.js';
-import Personal from './components/Personal.js';
-import Projects from './pages/Projects.js';
-import Contact from './pages/Contact.js';
-import Newsletter from './pages/Newsletter.js';
+import Navbar from './components/Navbar';
+import Personal from './components/Personal';
+import Projects from './pages/Projects';
+import Contact from './pages/Contact';
+import Newsletter from './pages/Newsletter';
 
-import Footer from './components/Footer.js';
-import { Routes, Route } from "react-router-dom"
+import Footer from './components/Footer';
+import { Routes, Route } from "react-router-dom";
 
 function App() {
   return (

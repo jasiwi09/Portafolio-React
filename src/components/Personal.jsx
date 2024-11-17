@@ -1,6 +1,7 @@
 import './Personal.css';
-import About from './About.js';
-import Skills from './Skills.js';
+import About from './About';
+import Skills from './Skills';
+import { Link } from 'react-router-dom';
 
 export default function Personal() {
     return (
@@ -10,7 +11,7 @@ export default function Personal() {
                     <h1>antonio martinez</h1>
                     <h2>administrador de sistemas</h2>
                     <h2>programador fullstack</h2>
-                    <a href="#projects"><button>ver mis proyectos</button></a>
+                    <Link to="/projects"><a href="#projects"><button>ver mis proyectos</button></a></Link>
                 </div>
                 <div className="right-side">
                     <img src="/img/persona.png" alt="" />
