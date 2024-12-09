@@ -1,7 +1,7 @@
 .container-contact form {
-    width: var(--main-Width);
+    width: 600px;
     margin: 0 auto;
-    height: 30rem;
+    height: 60rem;
     background-color: var(--secondary-Color);
     border-radius: 20px;
     display: flex;
@@ -11,6 +11,7 @@
     margin-top: 3rem;
     flex-direction: column;
     transition: .3s;
+    gap: .5rem;
 }
 
 .container-contact form:hover {
@@ -33,6 +34,29 @@
     background-color: var(--bg-Color);
     color: white;
 }
+
+
+.container-contact textarea {
+    border: none;
+    padding: 1rem 3rem;
+    height: 4rem;
+    font-size: 2rem;
+    border-radius: 10px;
+    background-color: var(--bg-Color);
+    color: white;
+    font-family: 'Rethink Sans';
+    width: 24rem;
+    max-width: 24rem;
+    min-width: 24rem;
+    height: 10rem;
+    min-height: 10rem;
+    max-height: 10rem;
+}
+
+.container-contact label {
+    font-size: 2rem;
+}
+
 
 .container-contact input:focus {
     outline: none;
@@ -76,7 +100,7 @@
     .container-contact form {
         width: 75%;
         margin: 0 auto;
-        height: 40rem;
+        height: 55rem;
         background-color: var(--secondary-Color);
         border-radius: 20px;
         display: flex;
@@ -86,6 +110,19 @@
         margin-top: 3rem;
         flex-direction: column;
         transition: .3s;
+        gap: 0rem;
+    }
+
+    .container-contact textarea {
+        border: none;
+        padding: 1rem 3rem;
+        height: 4rem;
+        font-size: 2rem;
+        border-radius: 10px;
+        background-color: var(--bg-Color);
+        color: white;
+        font-family: 'Rethink Sans';
+        width: 1rem;
     }
 
     .container-contact h2 {
